@@ -1,0 +1,3 @@
+[submodule "greenaddress-pos-tools"]
+	path = greenaddress-pos-tools
+	url = git://github.com/javgh/greenaddress-pos-tools
