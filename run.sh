@@ -13,5 +13,5 @@ fi
 ln -sf $BASE/greenaddress-pos-tool.conf $HOME/.greenaddress-pos-tool
 ln -sf $BASE/bitcoin.conf $HOME/.bitcoin/bitcoin.conf
 
-bitcoind $REINDEX -walletnotify="$POS/utils/queue-tx %s"
+bitcoind $REINDEX -walletnotify="$POS/utils/queue-tx %s" &
 python $POS/pos-tool.py
