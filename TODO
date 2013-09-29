@@ -4,7 +4,8 @@
   == "The merchant is expected to use their Bitcoin client to see if the correct amount was sent"
   == From the sounds of the README. So where do we look? Should we write better code?
 * test the tunnel
-* create launch.desktop for run.sh and init.d script for start_bitcoind.sh
-  ++ and split out install.sh
-* get treasury setup with bitcoind user on startup and put it into DNS & purpose
+* create launch.desktop for run.sh
+  + make it track PID of ensure_ and pos, wait for pos and then kill ensure to close the tunnel
+  ++ update install.sh
+* get treasury into DNS & purpose
 * add secret.conf (shared secret), push to bitcoin-pos public repo without it or greenaddress fork
