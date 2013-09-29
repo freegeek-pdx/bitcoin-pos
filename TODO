@@ -5,4 +5,5 @@
   == From the sounds of the README. So where do we look? Should we write better code?
 * test the tunnel
 * create launch.desktop for run.sh and init.d script for start_bitcoind.sh
+  ++ and split out install.sh
 * get treasury setup with bitcoind user on startup and put it into DNS & purpose
