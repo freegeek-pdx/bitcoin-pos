@@ -12,4 +12,4 @@ if [ ! -e "$BITCOIN" ]; then
 fi
 ln -sf $BASE/bitcoin.conf $HOME/.bitcoin/bitcoin.conf
 
-bitcoind $REINDEX -walletnotify="$POS/utils/queue-tx %s" &
+bitcoind $REINDEX -walletnotify="$BASE/ping_all_queues.sh %s" &

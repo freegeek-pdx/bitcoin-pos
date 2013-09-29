@@ -1,0 +1,12 @@
+find_ports_listening() {
+    for TEST_PORT in "$@"; do
+	test_listening_on_port "$TEST_PORT"
+    done
+}
+
+test_listening_on_port() {
+    TEST_THIS_PORT="$1"
+    if netstat -tln | awk '{print $4}' | grep -q ":${TEST_THIS_PORT}$"; then
+	echo "$TEST_THIS_PORT"
+    fi
+}
