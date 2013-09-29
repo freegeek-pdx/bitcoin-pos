@@ -8,6 +8,6 @@ if [ ! -e "$BITCOIN" ]; then
     mkdir -p "$BITCOIN"
     REINDEX="-reindex"
 fi
-ln -sf $BASE/bitcoin.conf $HOME/.bitcoin/bitcoin.conf
+copy_with_secret $BASE/bitcoin.conf $HOME/.bitcoin/bitcoin.conf
 
 bitcoind $REINDEX -walletnotify="$BASE/ping_all_queues.sh %s" &
