@@ -7,3 +7,4 @@
 * create launch.desktop for run.sh and init.d script for start_bitcoind.sh
   ++ and split out install.sh
 * get treasury setup with bitcoind user on startup and put it into DNS & purpose
+* add secret.conf (shared secret), push to bitcoin-pos public repo without it or greenaddress fork
