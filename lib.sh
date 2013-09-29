@@ -1,6 +1,6 @@
 . $BASE/scripts.conf
 
-SSH_KEY_FILE="$BASE/tunnel_key.sh"
+SSH_KEY_FILE="$BASE/tunnel_key"
 POS=$BASE/greenaddress-pos-tools
 BITCOIN=$HOME/.bitcoin/
 RPC_PORT_NUMBER="8332"
