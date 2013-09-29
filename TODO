@@ -3,4 +3,5 @@
 * It checks if transaction is received, but the amount may be wrong / isn't displayed?
   == "The merchant is expected to use their Bitcoin client to see if the correct amount was sent"
   == From the sounds of the README. So where do we look? Should we write better code?
-  
+* FIXME: This needs to happen through network: -walletnotify="$POS/utils/queue-tx %s"
+* Setup SSH keys and test the tunnel
