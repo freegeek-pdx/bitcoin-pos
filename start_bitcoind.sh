@@ -1,9 +1,7 @@
 #!/bin/sh
 
 BASE=$(dirname $(readlink -f $0))
-BITCOIN=$HOME/.bitcoin/
-# FIXME
-POS=$BASE/greenaddress-pos-tools
+. $BASE/lib.sh
 
 REINDEX=""
 if [ ! -e "$BITCOIN" ]; then
