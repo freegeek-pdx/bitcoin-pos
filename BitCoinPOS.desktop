@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=BitCoin POS
+Exec=/opt/bitcoin-pos/run.sh
+Categories=Network;WebBrowser;
