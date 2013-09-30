@@ -1,4 +1,1 @@
 * Get an actual address from Mt. Gox (FIXME in greenaddress-pos-tool.conf)
-* It checks if transaction is received, but the amount may be wrong / isn't displayed? README:
-  == "The merchant is expected to use their Bitcoin client to see if the correct amount was sent"
-  == Should we write better code? It's EASY! See _new_transaction_received in greenaddress-pos-tools/controller.py
