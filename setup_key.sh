@@ -11,4 +11,4 @@ PUB=$(cat $PUBKEY)
 cat - > $AUTHKEY <<EOF
 command="echo 'This account can only be used for remote bitcoind access.'",no-agent-forwarding,no-X11-forwarding $PUB
 EOF
-ssh-copy-id -i $AUTHKEY $CENTRAL_USER@$CENTRAL_SERVER
+echo "Install $BASE/tunnel_key.authorized_keys on $CENTRAL_USER@$CENTRAL_SERVER:.ssh/authorized_keys"
