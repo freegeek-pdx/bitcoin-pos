@@ -2,6 +2,7 @@
 
 SSH_KEY_FILE="$BASE/tunnel_key"
 POS=$BASE/greenaddress-pos-tools
+export POS
 BITCOIN=$HOME/.bitcoin/
 RPC_PORT_NUMBER="8332"
 LOCAL_PORT="15556"
