@@ -3,6 +3,11 @@
 BASE=$(dirname $(readlink -f $0))
 . $BASE/lib.sh
 
+if [ -n "$(test_listening_on_port "$LOCAL_PORT")" ]; then
+    zenity --title="BitcoinPOS" --error --text="It looks like the Greenaddress POS Tools are already running.\nPlease close the existing copy before launching a new one."
+    exit 1
+fi
+
 do_end_stuff() {
 if [ -n "$TUNNEL_PID" ]; then
     kill $TUNNEL_PID
